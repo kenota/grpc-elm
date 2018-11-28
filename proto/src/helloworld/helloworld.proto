@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "google/api/annotations.proto";
+
+enum GreetingType {
+    GREETING_TYPE_UNSPECIFIED = 0;
+    NORMAL = 1;
+    ELM_WAY = 2;    
+}
+
+message ElmTalkRequest {
+    string name = 1;
+    GreetingType greeting_type = 2;
+}
+
+message ElmTalkResponse {
+    string greeting = 1;
+}
+
+service HelloWorldService {
+    rpc SayHello(ElmTalkRequest) returns (ElmTalkResponse) {
+        option (google.api.http) = {
+            post: "/v1/helloworld/hello"
+            body: "*"
+        };
+    }
+}
