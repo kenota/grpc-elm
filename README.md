@@ -2,6 +2,8 @@
 
 This repository contains code to demonstrate how type safe API can be created using [Go](http://golang.org) with client library for [ELM](https://elm-lang.org/) without writing any decoding/network code.
 
+This is the code I demonstrated on the [London Elm Meetup](https://www.meetup.com/Elm-London-Meetup/) lightning talk called "Typesafe all the way". Talk slides are available [here](https://docs.google.com/presentation/d/1GvTgJvtKOHaECCmphjl_1zNJjIWk1dXKrq9v_NyX0aU/edit?usp=sharing)
+
 ## Running example
 
 ### Requriements
